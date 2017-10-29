@@ -1,11 +1,11 @@
 #install dplyr
-if(!"dplyr" %in% rownames(installed.packages()))  {install.packages("dplyr")}
+if(!"dplyr" %in% rownames(installed.packages())) {install.packages("dplyr")}
 
 #load dplyr
 if(!"dplyr" %in% rownames(.packages())) {library(dplyr)}
 
 #install tidyr
-if(!"tidyr" %in% rownames(installed.packages()))  {install.packages("tidyr")}
+if(!"tidyr" %in% rownames(installed.packages())) {install.packages("tidyr")}
 
 #load tidyr
 if(!"tidyr" %in% rownames(.packages())) {library(tidyr)}
@@ -90,7 +90,7 @@ means <- mean.std %>%
   group_by(activity, subject)
 
 #summarise groups
-summarise <- summarise_each(means,funs(mean))
+summarise <- summarise_all(means,funs(mean))
 
 #remove old objects
 rm(file.url,variables,test,test_data,test_labels,test_subjects,train,train_data,train_labels,train_subjects,all,means)
