@@ -1,6 +1,7 @@
 Source: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
-The mean and standard deviation of the following variables were measured on 6 activities (walking, walking upstairs, walking downstairs, sitting, standing, laying):
+The mean and standard deviation of the following variables were measured on 6 activities:
+(walking, walking upstairs, walking downstairs, sitting, standing, laying):
 
 (units: Hz)
 tBodyAcc-XYZ
