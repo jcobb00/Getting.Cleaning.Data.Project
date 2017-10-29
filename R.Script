@@ -95,6 +95,9 @@ summarise <- summarise_all(means,funs(mean))
 #remove old objects
 rm(file.url,variables,test,test_data,test_labels,test_subjects,train,train_data,train_labels,train_subjects,all,means)
 
+#create .txt file
+#write.table(summarise,"summarise.txt",row.names = FALSE)
+
 #create csv files
 #write.csv(mean.std,"mean.std.csv")
 #write.csv(summarise,"summarise.csv")
